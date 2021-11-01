@@ -1,0 +1,50 @@
+.container {
+    background-color: #FFF;
+    text-align: left;
+    width: 20vw;
+    height: 40vh;
+    margin-top: 0rem;
+}
+.paymentText {
+    text-align: left;
+    margin-top: 1.3rem;
+}
+.paymentTextMain {
+    font-family: Sailec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C0C6A;
+}
+.paymentTextSub {
+    font-family: Sailec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #877E9E;
+}
+.paymentinfo {
+    display: block;
+    margin: 0 0 1rem 0;
+    height: 3rem;
+    width: 80%;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.compare {
+    height: 2rem;
+    width: 40%;
+    border: 1px solid #4305EB;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-right: 0.5rem;
+}
+.continue {
+    height: 2rem;
+    width: 40%;
+    background: #4305EB;
+    border-radius: 6px;
+}

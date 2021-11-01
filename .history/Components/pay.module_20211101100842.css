@@ -1,0 +1,35 @@
+.container {
+    background-color: #E5E5E5;
+    text-align: center;
+    width: 20vw;
+    height: 40vh;
+}
+.paymentText {
+    text-align: left;
+    margin-top: 1.3rem;
+}
+.paymentTextMain {
+    font-family: Sailec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C0C6A;
+}
+.paymentTextSub {
+    font-family: Sailec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #877E9E;
+}
+.paymentinfo {
+    display: block;
+    margin: 0 0 1rem 0;
+    height: 2rem;
+    width: 70%;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}

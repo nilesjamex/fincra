@@ -1,0 +1,25 @@
+.container {
+    background-color: red;
+    text-align: center;
+    width: 50vw;
+    height: 60vh;
+}
+.paymentText {
+    text-align: left;
+}
+.paymentTextMain {
+    font-family: Sailec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C0C6A;
+}
+.paymentTextSub {
+    font-family: Sailec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #877E9E;
+}

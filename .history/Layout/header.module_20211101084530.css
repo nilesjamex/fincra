@@ -1,0 +1,10 @@
+.navbar {
+    height: 10vh;
+    background-color: #A98CF6;
+    display: flex;
+    align-items: center;
+}
+.fincra h3 {
+    margin-left: 3rem;
+    
+}
