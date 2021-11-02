@@ -13,6 +13,7 @@ const header = () => {
         <Image src="/../public/Images/y.svg" alt="logo" height="17.77px" width="12.91px" /></h3>
         </div>
         <div className={styles.inputrange}> 
+        <input className={styles.input} value="25" min="0" max="25" type="range" />
         </div>
         </nav>
     )

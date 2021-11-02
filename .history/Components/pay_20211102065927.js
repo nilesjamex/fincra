@@ -74,7 +74,7 @@
                     setFee(feeCalc);
                     const sendRateCalc = (send - feeCalc);
                     setSendRate(sendRateCalc);
-                    const receiveCalc = sendRateCalc * rate;
+                    const receiveCalc = (send-fee) * rate;
                     setReceive(receiveCalc);
                     setEnable(false);
                     setShowRates(true);

@@ -70,12 +70,9 @@
         const compare = (e) => {
                     e.preventDefault();
                     const rate = info[to];
-                    const feeCalc = (1/100) * send;
-                    setFee(feeCalc);
-                    const sendRateCalc = (send - feeCalc);
-                    setSendRate(sendRateCalc);
-                    const receiveCalc = sendRateCalc * rate;
-                    setReceive(receiveCalc);
+                    setFee(10/100 * send);
+                    setSendRate((send-fee))
+                    setReceive((send-fee) * rate);
                     setEnable(false);
                     setShowRates(true);
                     
@@ -99,16 +96,14 @@
                     </div>
 
                     <form className={styles.form}  onSubmit={step2}> 
-                    <div style={{display: "flex",  marginBottom: "0.6rem"}}>
                     <input className={styles.paymentinfo} 
                     type="text" 
                     name="send"
                     value={send}
                     onChange={onChange}
-                    required /> <Dropdown style={{height: "3.5rem"}} options={options} 
+                    required /> <Dropdown options={options} 
                         onChange={(e) => { setFrom(e.value) }}
             value={from} placeholder="From" />
-            </div>
 
            {
                showRates && <div className={styles.rateShow}>
@@ -127,7 +122,6 @@
             </div>
            } 
 
-           <div style={{display: "flex",  marginBottom: "0.6rem"}}>
                     <input className={styles.paymentinfo} type="text" 
                     name="receive"
                     value={receive}
@@ -136,7 +130,6 @@
                     <Dropdown options={options} 
                         onChange={(e) => { setTo(e.value) }}
             value={to} placeholder="to" />
-            </div>
                     <button type="submit" className={styles.compare} onClick={compare}> Compare Rates</button>
                     <button type="submit" className={styles.continue} disabled={enable}> Continue </button>
                     </form>
@@ -191,8 +184,7 @@
                     name="ibanno"
                     value={ibanno}
                     onChange={onChange}
-                    required
-                    placeholder="DE98370440018929829032"/>
+                    required/>
                     </div>
                     </div>
                 }
@@ -205,8 +197,7 @@
                     name="swift"
                     value={swift}
                     onChange={onChange}
-                    required
-                    placeholder="BUKBGB22"/>
+                    required/>
                     </div>
                     <div className={styles.payinfo}>
                     <label> IBAN / Account Number</label> 
@@ -215,8 +206,7 @@
                     name="account"
                     value={account}
                     onChange={onChange}
-                    required
-                    placeholder="01234567891"/>
+                    required/>
                     </div>
                     </div>
                 
@@ -234,7 +224,7 @@
                     <div className={styles.container}>
                     <div className={styles.paymentText}>
                     <h2 className={styles.paymentTextMain}>Review details of your transfer</h2>   
-                    <hr width="96%" style={{border: "1px solid #F2F2F2"}} />     
+                    <hr width="96%" />     
                     </div>
                     
                     <div className={styles.rateShow}>
@@ -262,7 +252,7 @@
             <p>Guaranteed rate (1hr)</p>
             <h5>{info[to]} {to}</h5>
             </div>
-            <hr width="96%" style={{margin: "1.2rem 0 1.2rem 0.6rem", border: "1px solid #F2F2F2"}} />
+            <hr width="96%" style={{margin: "1.2rem 0 1.2rem 0.6rem"}} />
             </div>
 
              <div className={styles.rateShow}>
@@ -271,15 +261,27 @@
             <h5>{name}</h5>
             </div>
             <div className={styles.rateInfo}>
-            <p>Email Address</p>
-            <h5>{email}</h5>
+            <p>Total fees (included)</p>
+            <h5>{fee} {from}</h5>
             </div>
             <div className={styles.rateInfo}>
-            <p>IBAN / Account number</p>
-            <h5>{ibanno || account}</h5>
+            <p>Amount we’ll convert</p>
+            <h5>{sendRate} {from}</h5>
             </div>
+            <div className={styles.rateInfo}>
+            <p>Guaranteed rate (1hr)</p>
+            <h5>{info[to]} {to}</h5>
             </div>
-             <button className={styles.continue3} disabled> Confirm and Continue </button>
+             <div className={styles.rateInfo}>
+            <p>{name} gets</p>
+            <h5>{receive} {to}</h5>
+            </div>
+             <div className={styles.rateInfo}>
+            <p>Guaranteed rate (1hr)</p>
+            <h5>{info[to]} {to}</h5>
+            </div>
+            <hr width="96%" style={{margin: "1.2rem 0 1.2rem 0.6rem"}} />
+            </div>
                    
                     </div>
                     </div>

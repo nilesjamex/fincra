@@ -6,7 +6,7 @@
 .container {
     background-color: #FFF;
     text-align: left;
-    width: 30%;
+    width: 30vw;
     height: auto;
     margin-top: 2rem;
 }
@@ -16,7 +16,7 @@
     margin-left: 0.6rem;
 }
 .paymentTextMain {
-    font-family: 'Sailec';
+    font-family: Sailec;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
@@ -45,11 +45,11 @@
 .paymentinfo {
     display: block;
     margin: 0rem 0 0rem 0.6rem;
-    height: 2.4rem;
+    height: 3rem;
     width: 80%;
     border: 1px solid #E8E8E8;
     box-sizing: border-box;
-    border-radius: 0px;
+    border-radius: 4px;
     justify-content: center;
     outline: none;
     padding: 0.4rem;
@@ -108,15 +108,4 @@
     line-height: 24px;
     color: #8B8F96;
     cursor: pointer;
-}
-
-/* mobile responsiveness */
-@media screen and (max-width: 900px) {
-    .container {
-        background-color: #FFF;
-        text-align: left;
-        width: 100%;
-        height: auto;
-        margin-top: 2rem;
-    }
 }

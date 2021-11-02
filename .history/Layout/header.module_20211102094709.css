@@ -13,7 +13,7 @@
 .inputrange {
     width: 70%;
 }
-/* .input[type=range] {
+.input[type=range] {
     height: 25px;
     -webkit-appearance: none;
     margin: 10px 0;
@@ -94,5 +94,5 @@
     background: #A1D0FF;
     cursor: pointer;
   }
-   */
+  
 

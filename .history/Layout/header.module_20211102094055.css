@@ -13,7 +13,7 @@
 .inputrange {
     width: 70%;
 }
-/* .input[type=range] {
+.input[type=range] {
     height: 25px;
     -webkit-appearance: none;
     margin: 10px 0;
@@ -73,13 +73,13 @@
     color: transparent;
   }
   .input[type=range]::-ms-fill-lower {
-    background: #fff;
+    background: #2497E3;
     border: 0px solid #000000;
     border-radius: 2px;
     box-shadow: 0px 0px 0px #000000;
   }
   .input[type=range]::-ms-fill-upper {
-    background: #fff;
+    background: #2497E3;
     border: 0px solid #000000;
     border-radius: 2px;
     box-shadow: 0px 0px 0px #000000;
@@ -94,5 +94,5 @@
     background: #A1D0FF;
     cursor: pointer;
   }
-   */
+  
 

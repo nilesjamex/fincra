@@ -12,7 +12,8 @@ const header = () => {
         <Image src="/../public/Images/a.svg" alt="logo" height="17.77px" width="10.26px"/>
         <Image src="/../public/Images/y.svg" alt="logo" height="17.77px" width="12.91px" /></h3>
         </div>
-        <div className={styles.inputrange}> 
+        <div> 
+        <input value="75" type="range" />
         </div>
         </nav>
     )

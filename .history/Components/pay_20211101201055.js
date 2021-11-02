@@ -70,12 +70,9 @@
         const compare = (e) => {
                     e.preventDefault();
                     const rate = info[to];
-                    const feeCalc = (1/100) * send;
-                    setFee(feeCalc);
-                    const sendRateCalc = (send - feeCalc);
-                    setSendRate(sendRateCalc);
-                    const receiveCalc = sendRateCalc * rate;
-                    setReceive(receiveCalc);
+                    setFee(10/100 * send);
+                    setSendRate((send-fee))
+                    setReceive((send-fee) * rate);
                     setEnable(false);
                     setShowRates(true);
                     

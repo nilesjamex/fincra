@@ -70,12 +70,9 @@
         const compare = (e) => {
                     e.preventDefault();
                     const rate = info[to];
-                    const feeCalc = (1/100) * send;
-                    setFee(feeCalc);
-                    const sendRateCalc = (send - feeCalc);
-                    setSendRate(sendRateCalc);
-                    const receiveCalc = sendRateCalc * rate;
-                    setReceive(receiveCalc);
+                    setFee(10/100 * send);
+                    setSendRate((send-fee))
+                    setReceive((send-fee) * rate);
                     setEnable(false);
                     setShowRates(true);
                     
@@ -191,8 +188,7 @@
                     name="ibanno"
                     value={ibanno}
                     onChange={onChange}
-                    required
-                    placeholder="DE98370440018929829032"/>
+                    required/>
                     </div>
                     </div>
                 }
@@ -205,8 +201,7 @@
                     name="swift"
                     value={swift}
                     onChange={onChange}
-                    required
-                    placeholder="BUKBGB22"/>
+                    required/>
                     </div>
                     <div className={styles.payinfo}>
                     <label> IBAN / Account Number</label> 
@@ -215,8 +210,7 @@
                     name="account"
                     value={account}
                     onChange={onChange}
-                    required
-                    placeholder="01234567891"/>
+                    required/>
                     </div>
                     </div>
                 
@@ -276,7 +270,7 @@
             </div>
             <div className={styles.rateInfo}>
             <p>IBAN / Account number</p>
-            <h5>{ibanno || account}</h5>
+            <h5>{ibanno || swift}</h5>
             </div>
             </div>
              <button className={styles.continue3} disabled> Confirm and Continue </button>

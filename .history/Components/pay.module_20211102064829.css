@@ -54,8 +54,8 @@
     outline: none;
     padding: 0.4rem;
 }
+height: 2.5rem;
 .compare {
-    height: 2.5rem;
     width: 40%;
     border: 1px solid #4305EB;
     box-sizing: border-box;
@@ -108,15 +108,4 @@
     line-height: 24px;
     color: #8B8F96;
     cursor: pointer;
-}
-
-/* mobile responsiveness */
-@media screen and (max-width: 900px) {
-    .container {
-        background-color: #FFF;
-        text-align: left;
-        width: 100%;
-        height: auto;
-        margin-top: 2rem;
-    }
 }
