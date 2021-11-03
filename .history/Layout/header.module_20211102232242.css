@@ -2,7 +2,7 @@
     height: 6vh;
     background-color: #A98CF6;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .fincra h3 {

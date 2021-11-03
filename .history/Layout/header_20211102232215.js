@@ -17,10 +17,8 @@ const Header = () => {
         <Image src="/../public/Images/a.svg" alt="logo" height="17.77px" width="10.26px"/>
         <Image src="/../public/Images/y.svg" alt="logo" height="17.77px" width="12.91px" /></h3>
         </div>
-        {/* <div className={styles.inputrange}>
-        <div style={{
-        backgroundColor: `linear-gradient(to right, #4305EB 64.83%, #636166 99.42%)`,
-        }} className="track">
+        <div className={styles.inputrange}>
+        <div className="track">
               <input min="0"
               className={styles.input}
               max="100"
@@ -29,7 +27,8 @@ const Header = () => {
               type="range" />
               <div className={styles.animateTrack}></div>
               </div> 
-        </div> */}
+        </div>
+        <p>vv</p>
         </nav>
     )
 }

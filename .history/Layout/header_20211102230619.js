@@ -1,13 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styles from './header.module.css'
 import Image from 'next/image'
 
-const Header = () => {
-    const [value, setValue] = useState(0)
-
-    const dragHandler = (e) => {
-        setvalue(e.target.value)
-    }
+const header = () => {
     return (
         <nav className={styles.navbar}>
         <div className={styles.fincra}>
@@ -17,21 +12,22 @@ const Header = () => {
         <Image src="/../public/Images/a.svg" alt="logo" height="17.77px" width="10.26px"/>
         <Image src="/../public/Images/y.svg" alt="logo" height="17.77px" width="12.91px" /></h3>
         </div>
-        {/* <div className={styles.inputrange}>
+        <div className={styles.inputrange}>
         <div style={{
         backgroundColor: `linear-gradient(to right, #4305EB 64.83%, #636166 99.42%)`,
         }} className="track">
               <input min="0"
               className={styles.input}
               max="100"
-              onChange={dragHandler}
-              value={value}
+            //   onChange={dragHandler}
+              value={25}
               type="range" />
               <div className={styles.animateTrack}></div>
               </div> 
-        </div> */}
+        </div>
+        <p>vv</p>
         </nav>
     )
 }
 
-export default Header;
+export default header

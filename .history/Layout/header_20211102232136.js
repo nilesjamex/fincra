@@ -29,7 +29,8 @@ const Header = () => {
               type="range" />
               <div className={styles.animateTrack}></div>
               </div> 
-        </div> */}
+        </div>
+        <p>vv</p> */}
         </nav>
     )
 }
