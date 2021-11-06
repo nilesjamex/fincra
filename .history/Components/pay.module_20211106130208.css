@@ -5,7 +5,7 @@
 }
 .container {
     background-color: #FFF;
-    text-align: left;
+    text-align: center;
     width: 30%;
     height: auto;
     margin-top: 2rem;
@@ -46,7 +46,7 @@
     display: block;
     margin: 0rem 0 0rem 0.6rem;
     height: 2.4rem;
-    width: 94%;
+    width: 80%;
     border: 1px solid #E8E8E8;
     box-sizing: border-box;
     border-radius: 0px;
@@ -62,7 +62,7 @@
     border: 1px solid #4305EB;
     box-sizing: border-box;
     border-radius: 6px;
-    margin: 1rem 0.5rem 1rem 1.20000000000000000000000000rem;
+    margin: 1rem 0.5rem 1rem 1.5rem;
 }
 .continue {
     height: 2.5rem;
@@ -77,7 +77,7 @@
     height: 2.5rem;
     margin: 1rem 0rem;
     margin-left: 0.6rem;
-    width: 94%;
+    width: 80%;
     color: #fff;
     background: #4305EB;
     border-radius: 6px;
@@ -120,9 +120,9 @@
     .container {
         background-color: #FFF;
         text-align: left;
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin: 2rem;
+        margin: 4rem;
     }
     .compare {
         height: 2.5rem;

@@ -46,7 +46,7 @@
     display: block;
     margin: 0rem 0 0rem 0.6rem;
     height: 2.4rem;
-    width: 94%;
+    width: 80%;
     border: 1px solid #E8E8E8;
     box-sizing: border-box;
     border-radius: 0px;
@@ -56,19 +56,16 @@
 }
 .compare {
     height: 2.5rem;
-    width: 45%;
-    background-color: transparent;
-    color: #4305EB;
+    width: 40%;
     border: 1px solid #4305EB;
     box-sizing: border-box;
     border-radius: 6px;
-    margin: 1rem 0.5rem 1rem 1.20000000000000000000000000rem;
+    margin: 1rem 0.5rem 1rem 0.6rem;
 }
 .continue {
     height: 2.5rem;
     margin: 1rem 0rem;
-    width: 45%;
-    color: #fff;
+    width: 40%;
     background: #4305EB;
     border-radius: 6px;
     outline: none;
@@ -77,8 +74,7 @@
     height: 2.5rem;
     margin: 1rem 0rem;
     margin-left: 0.6rem;
-    width: 94%;
-    color: #fff;
+    width: 80%;
     background: #4305EB;
     border-radius: 6px;
     outline: none;
@@ -88,7 +84,6 @@
     margin: 1rem 0rem;
     margin-left: 0.6rem;
     width: 96%;
-    color: #fff;
     background: #6FAE75;
     border-radius: 6px;
     outline: none;
@@ -120,24 +115,24 @@
     .container {
         background-color: #FFF;
         text-align: left;
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin: 2rem;
+        margin: 4rem;
     }
     .compare {
         height: 2.5rem;
         display: block;
-        width: 97%;
+        width: 90%;
         border: 1px solid #4305EB;
         box-sizing: border-box;
         border-radius: 6px;
-        margin: 1rem 0.5rem 1rem 0.6rem;
+        margin: 1rem 0.5rem 1rem 2rem;
     }
     .continue {
         height: 2.5rem;
         margin: 1rem 0.6rem;
         display: block;
-        width: 97%;
+        width: 90%;
         background: #4305EB;
         border-radius: 6px;
         outline: none;
