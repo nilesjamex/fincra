@@ -10,3 +10,8 @@
     color: #222222;
     font-size: 1.4rem;
 }
+.track {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}

@@ -6,7 +6,7 @@
   .input {
     -webkit-appearance: none;
     width: 100%;
-    height: 6px;
+    height: 10px;
     outline: none;
     border-radius: 3px;
   }
@@ -28,18 +28,17 @@
     z-index: 2;
   }
   .selectBtn {
-    height: 10px;
+    height: 15px;
     width: 15px;
     background-color:  #636166;
     border-radius: 50%;
     position: relative;
-    bottom: -75px;
-    visibility: hidden;
+    bottom: -60px;
   }
   .progressBar {
       width: 50%;
       height: 7px;
-      background-color: #4305EB;
+      background-color: red;
       border-radius: 3px;
       top: 0;
       left: 0;

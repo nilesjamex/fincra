@@ -18,7 +18,13 @@ const Header = () => {
         <Image src="/../public/Images/y.svg" alt="logo" height="17.77px" width="12.91px" /></h3>
         </div>
         <div className={styles.inputrange}>
-        
+        <div className={styles.track}>
+              <input min="0"
+              className={styles.input}
+              max="100"
+              value="50"
+              type="range" />
+              </div> 
         </div>
         </nav>
     )

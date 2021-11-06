@@ -186,7 +186,7 @@
               </div> 
               <div className={styles.progressBar} style={{width: `${value}%`}}></div>
               <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}> 
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Amount</p>
+              <p style={{fontSize: "12px", color: "#636166"}}>Amount</p>
               <p style={{fontSize: "12px", color: "#636166"}}>Recipient</p>
               <p style={{fontSize: "12px", color: "#B7B7B7"}}>Review</p>
               <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
@@ -290,8 +290,8 @@
               </div> 
               <div className={styles.progressBar} style={{width: `${value}%`}}></div>
               <div style={{display: "flex", justifyContent: "space-between"}}> 
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Amount</p>
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Recipient</p>
+              <p style={{fontSize: "12px", color: "#636166"}}>Amount</p>
+              <p style={{fontSize: "12px", color: "#636166"}}>Recipient</p>
               <p style={{fontSize: "12px", color: "#636166"}}>Review</p>
               <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
               </div>

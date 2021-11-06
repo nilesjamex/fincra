@@ -35,13 +35,11 @@
                 const step2 = (e) => {
                     e.preventDefault();
                     front();
-                    setValue(value + 35)
                 }
 
                 const submit2 = (e) => {
                     e.preventDefault();
                     front();
-                    setValue(value + 30)
                 }
                 // api for exchange rates
                 const [info, setInfo] = useState([]);
@@ -83,12 +81,12 @@
         const [sendRate, setSendRate] = useState("")
 
         // range function
-        const [value, setValue] = useState(0);
-       const dragHandler = (e) => {
-           setValue(e.target.value)
-       }
-           
-        
+        const [value, setValue] = useState(50)
+        const dragHandler = (e) => {
+            e.preventDefault();
+            const selector = document.getElementsByClassName("selector");
+            selector.style.left = value + "%";
+        }
 
 
                 switch (steps) {
@@ -103,19 +101,10 @@
               onChange={dragHandler}
               max="100"
               value={value}
-              type="range"
-              disabled
-                />
-              <div className={styles.selector} style={{left: `${value}%`}} id="selectors">
+              type="range" />
+              <div className={styles.selector} style={{left: "50%"}} id="selectors">
               <div className={styles.selectBtn}></div>
               </div> 
-              <div className={styles.progressBar} style={{width: `${value}%`}}></div>
-              <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}> 
-              <p style={{fontSize: "12px", color: "#636166"}}>Amount</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Recipient</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Review</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
-              </div>
               </div>
                     <div className={styles.paymentText}>
                     <h2 className={styles.paymentTextMain}>One-time Payment</h2>
@@ -172,26 +161,6 @@
                     <div className={styles.move}>
                             
                     <div className={styles.container}>
-                     <div className={styles.track}>
-              <input min="0"
-              className={styles.input}
-              onChange={dragHandler}
-              max="100"
-              value={value}
-              type="range"
-              disabled
-                />
-              <div className={styles.selector} style={{left: `${value}%`}} id="selectors">
-              <div className={styles.selectBtn}></div>
-              </div> 
-              <div className={styles.progressBar} style={{width: `${value}%`}}></div>
-              <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}> 
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Amount</p>
-              <p style={{fontSize: "12px", color: "#636166"}}>Recipient</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Review</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
-              </div>
-              </div>
                     <div className={styles.paymentText}>
                     <h2 className={styles.paymentTextMain}>Your Recipient</h2>
                     <p className={styles.paymentTextSub}>Who are you sending money to?</p>        
@@ -276,26 +245,6 @@
                     <div className={styles.move}>
                             
                     <div className={styles.container}>
-                     <div className={styles.track}>
-              <input min="0"
-              className={styles.input}
-              onChange={dragHandler}
-              max="100"
-              value={value}
-              type="range"
-              disabled
-                />
-              <div className={styles.selector} style={{left: `${value}%`}} id="selectors">
-              <div className={styles.selectBtn}></div>
-              </div> 
-              <div className={styles.progressBar} style={{width: `${value}%`}}></div>
-              <div style={{display: "flex", justifyContent: "space-between"}}> 
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Amount</p>
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Recipient</p>
-              <p style={{fontSize: "12px", color: "#636166"}}>Review</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
-              </div>
-              </div>
                     <div className={styles.paymentText}>
                     <h2 className={styles.paymentTextMain}>Review details of your transfer</h2>   
                     <hr width="96%" style={{border: "1px solid #F2F2F2"}} />     

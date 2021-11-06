@@ -35,13 +35,13 @@
                 const step2 = (e) => {
                     e.preventDefault();
                     front();
-                    setValue(value + 35)
+                    setValue(value + 25)
                 }
 
                 const submit2 = (e) => {
                     e.preventDefault();
                     front();
-                    setValue(value + 30)
+                    setValue(value + 25)
                 }
                 // api for exchange rates
                 const [info, setInfo] = useState([]);
@@ -104,17 +104,16 @@
               max="100"
               value={value}
               type="range"
-              disabled
                 />
               <div className={styles.selector} style={{left: `${value}%`}} id="selectors">
               <div className={styles.selectBtn}></div>
               </div> 
               <div className={styles.progressBar} style={{width: `${value}%`}}></div>
               <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}> 
-              <p style={{fontSize: "12px", color: "#636166"}}>Amount</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Recipient</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Review</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
+              <p>one</p>
+              <p>one</p>
+              <p>one</p>
+              <p>one</p>
               </div>
               </div>
                     <div className={styles.paymentText}>
@@ -179,17 +178,16 @@
               max="100"
               value={value}
               type="range"
-              disabled
                 />
               <div className={styles.selector} style={{left: `${value}%`}} id="selectors">
               <div className={styles.selectBtn}></div>
               </div> 
               <div className={styles.progressBar} style={{width: `${value}%`}}></div>
-              <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}> 
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Amount</p>
-              <p style={{fontSize: "12px", color: "#636166"}}>Recipient</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Review</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
+              <div style={{display: "flex", justifyContent: "space-between"}}> 
+              <p>one</p>
+              <p>one</p>
+              <p>one</p>
+              <p>one</p>
               </div>
               </div>
                     <div className={styles.paymentText}>
@@ -283,17 +281,16 @@
               max="100"
               value={value}
               type="range"
-              disabled
                 />
               <div className={styles.selector} style={{left: `${value}%`}} id="selectors">
               <div className={styles.selectBtn}></div>
               </div> 
               <div className={styles.progressBar} style={{width: `${value}%`}}></div>
               <div style={{display: "flex", justifyContent: "space-between"}}> 
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Amount</p>
-              <p style={{fontSize: "12px", color: "#4406EC"}}>Recipient</p>
-              <p style={{fontSize: "12px", color: "#636166"}}>Review</p>
-              <p style={{fontSize: "12px", color: "#B7B7B7"}}>Pay</p>
+              <p>one</p>
+              <p>one</p>
+              <p>one</p>
+              <p>one</p>
               </div>
               </div>
                     <div className={styles.paymentText}>

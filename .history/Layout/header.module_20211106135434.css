@@ -10,3 +10,15 @@
     color: #222222;
     font-size: 1.4rem;
 }
+.track {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  outline: none;
+  border-radius: 3px;
+}
