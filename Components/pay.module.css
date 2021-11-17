@@ -23,24 +23,24 @@
     width: 48px;
     position: absolute;
     bottom: -20px;
-    /* left: 50%; */
+    left: 50%;
     transform: translateX(-50%);
     z-index: 2;
   }
   .selectBtn {
     height: 10px;
-    width: 15px;
-    background-color:  #636166;
-    border-radius: 50%;
+    width: 10px;
+    background-color:  #222;
+    border-radius: 100%;
     position: relative;
-    bottom: -75px;
-    visibility: hidden;
+    bottom: -3.77rem;
+    left: 42%;
   }
   .progressBar {
       width: 50%;
-      height: 7px;
+      height: 10px;
       background-color: #4305EB;
-      border-radius: 3px;
+      border-radius: 3rem;
       top: 0;
       left: 0;
   }
@@ -99,6 +99,7 @@
     justify-content: center;
     outline: none;
     padding: 0.4rem;
+    font-size: 18px;
 }
 .compare {
     height: 2.5rem;

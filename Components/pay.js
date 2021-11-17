@@ -322,10 +322,6 @@
             <p>{name} gets</p>
             <h5>{receive} {to}</h5>
             </div>
-             <div className={styles.rateInfo}>
-            <p>Guaranteed rate (1hr)</p>
-            <h5>{info[to]} {to}</h5>
-            </div>
             <hr width="96%" style={{margin: "1.2rem 0 1.2rem 0.6rem", border: "1px solid #F2F2F2"}} />
             </div>
 
